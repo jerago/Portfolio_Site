@@ -1,0 +1,45 @@
+body {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+.content {
+  flex: 1;
+  padding: 20px;
+}
+
+.footer {
+  padding: 20px;
+  background-color: blue;
+}
+
+#portfoliophoto{
+	border-radius: 50%;
+	margin: auto;  /* so that the image is centered, also use img-responsive */
+}
+
+#projectphoto{
+	margin: auto;
+}
+
+.project{
+	border: 1px solid black;
+
+}
+
+#Home{
+	background-color: #edf7f6;
+	padding-top: 10vh; 
+	padding-bottom: 10vh;
+}
+
+#Projects{
+	background-color: #474547;
+}
+
+#Contact{
+	background-color: #c2903f;
+}
+
+
+

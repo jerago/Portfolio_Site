@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en" >
+
+<head>
+  <meta charset="UTF-8">
+  <title>Portfolio Page</title>
+  
+  
+  <link rel='stylesheet prefetch' href='https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css'>
+
+      <link rel="stylesheet" href="css/other.css">
+
+  
+</head>
+
+<body>
+
+<nav class="navbar navbar-default navbar-expand-lg navbar-dark bg-dark"> <!-- you need to have jquery <script> before the bootstrap <script> for the navbar and other bootstrap components to work. go to settings -> javascript -> add jquery, then add bootstrap -->
+  <a class="navbar-brand" href="#">Justin</a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#itemlist" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">  <!-- data-target is the id of the div below containing the list-->
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse justify-content-end" id="itemlist"> <!-- justify-content-end to have the list items display on the right -->
+    <ul class="navbar-nav">
+      <li class="nav-item">
+        <a class="nav-link" href="#Home">Home</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#Projects">Projects</a>
+      </li>
+          <li class="nav-item">
+        <a class="nav-link" href="#Contact">Contact</a>
+      </li>
+    </ul>
+  </div>
+</nav>
+
+
+<!-- <section id="Home" class="content">
+  <div class="container">
+
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras tincidunt, augue in tincidunt feugiat, massa sem volutpat ex, in blandit urna nisl at ante. Cras vitae sollicitudin turpis, vitae interdum libero. Donec ante neque, interdum quis ante eget, tincidunt suscipit urna. Donec ullamcorper sollicitudin velit non fringilla. Phasellus sed dolor at leo molestie vulputate eget nec velit. Pellentesque leo leo, luctus tincidunt accumsan in, fringilla non lorem. </p>   
+
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras tincidunt, augue in tincidunt feugiat, massa sem volutpat ex, in blandit urna nisl at ante. Cras vitae sollicitudin turpis, vitae interdum libero. Donec ante neque, interdum quis ante eget, tincidunt suscipit urna. Donec ullamcorper sollicitudin velit non fringilla. Phasellus sed dolor at leo molestie vulputate eget nec velit. Pellentesque leo leo, luctus tincidunt accumsan in, fringilla non lorem. </p>   
+
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras tincidunt, augue in tincidunt feugiat, massa sem volutpat ex, in blandit urna nisl at ante. Cras vitae sollicitudin turpis, vitae interdum libero. Donec ante neque, interdum quis ante eget, tincidunt suscipit urna. Donec ullamcorper sollicitudin velit non fringilla. Phasellus sed dolor at leo molestie vulputate eget nec velit. Pellentesque leo leo, luctus tincidunt accumsan in, fringilla non lorem. </p>   
+
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras tincidunt, augue in tincidunt feugiat, massa sem volutpat ex, in blandit urna nisl at ante. Cras vitae sollicitudin turpis, vitae interdum libero. Donec ante neque, interdum quis ante eget, tincidunt suscipit urna. Donec ullamcorper sollicitudin velit non fringilla. Phasellus sed dolor at leo molestie vulputate eget nec velit. Pellentesque leo leo, luctus tincidunt accumsan in, fringilla non lorem. </p>   
+
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras tincidunt, augue in tincidunt feugiat, massa sem volutpat ex, in blandit urna nisl at ante. Cras vitae sollicitudin turpis, vitae interdum libero. Donec ante neque, interdum quis ante eget, tincidunt suscipit urna. Donec ullamcorper sollicitudin velit non fringilla. Phasellus sed dolor at leo molestie vulputate eget nec velit. Pellentesque leo leo, luctus tincidunt accumsan in, fringilla non lorem. </p>   
+
+  </div>
+</section> -->
+
+<section id="Home" class="content">
+  <div class="container">
+    <h1>Justin</h1>
+      <div class="row">
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras tincidunt, augue in tincidunt feugiat, massa sem volutpat ex, in blandit urna nisl at ante. Cras vitae sollicitudin turpis, vitae interdum libero. Donec ante neque, interdum quis ante eget, tincidunt suscipit urna. Donec ullamcorper sollicitudin velit non fringilla. Phasellus sed dolor at leo molestie vulputate eget nec velit. Pellentesque leo leo, luctus tincidunt accumsan in, fringilla non lorem. </p>
+      <img src="http://images.performgroup.com/di/library/omnisport/e/93/manny-pacquiao-cropped_12rj7dscv3jza159lhdaf9g0ls.jpg?t=-563686084&w=960&quality=70" class="img-responsive" width="200" height="200" id="portfoliophoto">   
+      </div> 
+  </div>
+</section>
+
+
+<section id="Projects">
+  <div class="container-fluid">
+    <div class="row">
+      <div class="col-md project">
+        <img src="https://www.android.com/static/2016/img/share/andy-lg.png" width="200" height="200" class="img-responsive" id="projectphoto">   
+      </div> 
+      <div class="col-md project">
+        <img src="https://www.android.com/static/2016/img/share/andy-lg.png" width="200" height="200" class="img-responsive" id="projectphoto"> 
+      </div>
+      <div class="col-md project">
+        <img src="https://www.android.com/static/2016/img/share/andy-lg.png" width="200" height="200" class="img-responsive" id="projectphoto"> 
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-md project">
+        <img src="https://www.android.com/static/2016/img/share/andy-lg.png" width="200" height="200" class="img-responsive" id="projectphoto">   
+      </div> 
+      <div class="col-md project">
+        <img src="https://www.android.com/static/2016/img/share/andy-lg.png" width="200" height="200" class="img-responsive" id="projectphoto"> 
+      </div>
+      <div class="col-md project">
+        <img src="https://www.android.com/static/2016/img/share/andy-lg.png" width="200" height="200" class="img-responsive" id="projectphoto"> 
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="Contact" class="content">
+  <h1>Contact</h1>
+  <div class="container">
+
+  </div>
+</section>
+
+<footer class="footer">
+  <div class="container">
+    <p>Some Text</p>
+  </div>
+</footer>
+
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js'></script>
+<script src='https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0/js/bootstrap.min.js'></script>
+
+</body>
+
+</html>
