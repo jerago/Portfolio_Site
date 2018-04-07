@@ -37,11 +37,11 @@
   </div>
 </nav>
 
-<section id="Home" class="content">
+<section id="Home" class="content bgImageHome">
   <div class="container">
-  	<h1>Justin</h1>
+  	<h1 class="whiteText">Justin</h1>
 	    <div class="row">
-	    	<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras tincidunt, augue in tincidunt feugiat, massa sem volutpat ex, in blandit urna nisl at ante. Cras vitae sollicitudin turpis, vitae interdum libero. Donec ante neque, interdum quis ante eget, tincidunt suscipit urna. Donec ullamcorper sollicitudin velit non fringilla. Phasellus sed dolor at leo molestie vulputate eget nec velit. Pellentesque leo leo, luctus tincidunt accumsan in, fringilla non lorem. </p>
+	    	<p class="whiteText">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras tincidunt, augue in tincidunt feugiat, massa sem volutpat ex, in blandit urna nisl at ante. Cras vitae sollicitudin turpis, vitae interdum libero. Donec ante neque, interdum quis ante eget, tincidunt suscipit urna. Donec ullamcorper sollicitudin velit non fringilla. Phasellus sed dolor at leo molestie vulputate eget nec velit. Pellentesque leo leo, luctus tincidunt accumsan in, fringilla non lorem. </p>
 			<img src="http://images.performgroup.com/di/library/omnisport/e/93/manny-pacquiao-cropped_12rj7dscv3jza159lhdaf9g0ls.jpg?t=-563686084&w=960&quality=70" class="img-responsive" width="200" height="200" id="portfoliophoto" alt="Profile_Photo">   
 	    </div> 
   </div>
@@ -92,8 +92,8 @@
   <div class="container">   
   <div class="row">
     <div class="col-md-6">
-      <div class="row">
-        <div class="envelope_icon">
+      <div class="row justify-content-center"> <!-- so that the icon is in the center of the row -->
+        <div id="envelope_icon">
           <i class="fa fa-envelope-o"></i>
         </div>
       </div>
@@ -110,21 +110,21 @@
       <form>      
         <div class="form-group row justify-content-center">  
         <div class="col-md">
-          <input type="text" class="form-control" placeholder="Your Name"> 
+          <input type="text" class="form-control" placeholder="Your Name" style="text-align:center;"> 
         </div>    
         </div>
       <div class="form-group row justify-content-center">  
         <div class="col-md">
-          <input type="email" class="form-control" placeholder="Your Email"> 
+          <input type="email" class="form-control" placeholder="Your Email" style="text-align:center;"> 
         </div>
       </div>    
       <div class="form-group row justify-content-center">  
         <div class="col-md">
-          <textarea class="form-control" rows="5" placeholder="Your Message"></textarea>
+          <textarea class="form-control" rows="5" placeholder="Your Message" style="text-align:center;"></textarea>
         </div>    
       </div> 
       <div class="form-group row justify-content-center">  
-        <div class="col-md-4">
+        <div class="col-md" align="center">  <!-- align=center so that the button is in the middle of the col -->
           <button type="submit" class="btn btn-default">Submit</button>
         </div>    
       </div>    
