@@ -64,24 +64,21 @@ section{
 }
 
 
-/*#Projects:hover{
-	background-color: yellow;
-}*/
-
 .smicons{  /*https://css-tricks.com/examples/IconFont/*/
 	color: #ffffff;
     /*text-shadow: 1px 1px 1px #ccc;*/
     font-size: 5em;
 }
 
-#envelope-icon{
-	color: #FBA929;
-	font-size: 10em;
+.envelope_icon{
+	color: #000000;
+	font-size: 5em;
 }
-
 
  /**{ border: 1px solid red; }*/
 
 /*go at noon, 1 at the latest*/
+
+
 
 
