@@ -93,6 +93,8 @@ section{
 	background-image: url("../images/laptop-desk-computer-smartphone-work-screen-916562-pxhere.com.jpg");
 	background-size: cover;
 	opacity: 0.99; /*changes the opacity of the image*/
+	max-width: 100%;
+	height: auto;
 }
 
  /**{ border: 1px solid red; }*/
