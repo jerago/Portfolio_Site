@@ -70,6 +70,8 @@ section{
 
 .project{
 	border: 1px solid black;
+	padding-right:0;
+	padding-left: 0;
 }
 
 #Projects{
@@ -84,22 +86,32 @@ section{
     font-size: 5em;
 }
 
-#envelope_icon{
+#envelope-icon{
 	color: #000000;
 	font-size: 5em;
 }
 
-.bgImageHome{
+.bg-image-home{
 	background-image: url("../images/laptop-desk-computer-smartphone-work-screen-916562-pxhere.com.jpg");
 	background-size: cover;
+	background-position: center; /* so that the image is centered regardless of screen size/ orientation */
 	opacity: 0.99; /*changes the opacity of the image*/
 	max-width: 100%;
 	height: auto;
 }
 
-.project-image:hover {opacity: 0.7;}
+.project-image:hover {
+	opacity: 0.7;
+}
 
- /**{ border: 1px solid red; }*/
+.project-image{
+	object-fit: cover;
+}
+
+
+
+
+ /* *{ border: 1px solid red; } */
 
 /*go at noon, 1 at the latest*/
 
