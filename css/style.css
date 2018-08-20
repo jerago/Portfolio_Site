@@ -32,9 +32,15 @@ h1{
 
 /*for styling the navbar*/
 
+nav{
+	padding-bottom: 10vh;
+}
+
 .navbar-custom {
-    /*background: rgba(39, 96, 164, .1);*/
-    background: transparent;
+	  flex: 1;
+		/* background: rgba(39, 96, 164, .1); */
+		background: transparent; 
+		
 }
 /* change the brand and text color */
 .navbar-custom .navbar-brand,
@@ -59,7 +65,7 @@ h1{
 
 section{
   width: 100%;
-  min-height: 50vh;  /*use this instead of a fixed height so that no overlap */
+	min-height: 50vh;  /*use this instead of a fixed height so that no overlap */
 }
 
 #portfoliophoto{
@@ -105,9 +111,19 @@ section{
 }
 
 .project-image{
-	object-fit: cover;
-}
+	background-image: url("https://www.android.com/static/2016/img/share/andy-lg.png");
+	background-size: cover;
+	background-position: center; /* so that the image is centered regardless of screen size/ orientation */
+	opacity: 0.99; /*changes the opacity of the image*/
+	max-width: 720px;
+	/* height: auto; */
 
+	height: 30vh;
+	/* width: 33vw; */
+
+
+
+}
 
 
 

@@ -5,10 +5,10 @@
   <meta name="viewport" content="width=device-width, initial scale=1" charset="utf-8">   <!-- for mobile devices, so that content resizes, charset utf-8 is for windows-1252 encoding -->
   <title>Portfolio Page</title>
   
-  
-  <link rel='stylesheet prefetch' href='https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css'>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+  <!-- <link rel='stylesheet prefetch' href='https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css'> -->
 
-      <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/style.css">
 <!--   <script defer src="https://use.fontawesome.com/releases/v5.0.8/js/all.js" integrity="sha384-SlE991lGASHoBfWbelyBPLsUlwY1GwNDJo3jSJO04KZ33K2bwfV9YBauFfnzvynJ" crossorigin="anonymous"></script> -->
 
   <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css"/>
@@ -17,8 +17,9 @@
 
 <body>
 
-<section id="Home" class="content bg-image-home">
-    <nav class="navbar navbar-default navbar-expand-lg navbar-custom navbar-transparent"> <!-- you need to have jquery <script> before the bootstrap <script> for the navbar and other bootstrap components to work. go to settings -> javascript -> add jquery, then add bootstrap    navbar-dark bg-dark   -->
+<section id="Home" class="bg-image-home">
+  <nav class="navbar navbar-default navbar-expand-lg navbar-custom navbar-transparent fixed-top" id="mNav"> <!-- you need to have jquery <script> before the bootstrap <script> for the navbar and other bootstrap components to work. go to settings -> javascript -> add jquery, then add bootstrap    navbar-dark bg-dark   -->
+    <div class="container">
       <a class="navbar-brand" href="#">Justin</a>
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#itemlist" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">  <!-- data-target is the id of the div below containing the list-->
         <span class="navbar-toggler-icon"></span>
@@ -36,8 +37,10 @@
           </li>
         </ul>
       </div>
-    </nav>
-  <div class="container">
+    </div>    
+  </nav>
+    
+  <div class="content container">
     <!-- <h1 class="whiteText">Justin</h1> -->
     <div class="row align-items-center">
       <p class="whiteText">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras tincidunt, augue in tincidunt feugiat, massa sem volutpat ex, in blandit urna nisl at ante. Cras vitae sollicitudin turpis, vitae interdum libero. Donec ante neque, interdum quis ante eget, tincidunt suscipit urna. Donec ullamcorper sollicitudin velit non fringilla. Phasellus sed dolor at leo molestie vulputate eget nec velit. Pellentesque leo leo, luctus tincidunt accumsan in, fringilla non lorem. </p>
@@ -50,37 +53,38 @@
 <section id="Projects">
   <div class="container-fluid">
     <div class="row">
-    	<div class="col-md project">
+    	<div class="col-md project project-image">
         <div class="container">
-          <img src="https://www.android.com/static/2016/img/share/andy-lg.png" class="img-fluid project-image" alt="android_photo">  
-          <a href="#"></a>
+            <div class="row align-self-center">
+               <a href="#">Project 1</a>
+            </div>
         </div>
       </div> 
-    	<div class="col-md project">
+    	<div class="col-md project project-image">
         <div class="container">
-          <img src="https://www.android.com/static/2016/img/share/andy-lg.png" class="img-fluid project-image" alt="android_photo">  
+          <!-- <img src="https://www.android.com/static/2016/img/share/andy-lg.png" class="img-fluid project-image" alt="android_photo">   -->
         </div> 
     	</div>
-    	<div class="col-md project">
+    	<div class="col-md project project-image">
         <div class="container">
-          <img src="https://www.android.com/static/2016/img/share/andy-lg.png" class="img-fluid project-image" alt="android_photo">  
+          <!-- <img src="https://www.android.com/static/2016/img/share/andy-lg.png" class="img-fluid project-image" alt="android_photo">   -->
         </div> 
     	</div>
     </div>
     <div class="row">
-    	<div class="col-md project">
+    	<div class="col-md project project-image">
         <div class="container">
-          <img src="https://www.android.com/static/2016/img/share/andy-lg.png" class="img-fluid project-image" alt="android_photo">  
+          <!-- <img src="https://www.android.com/static/2016/img/share/andy-lg.png" class="img-fluid project-image" alt="android_photo">   -->
         </div>    
     	</div> 
-    	<div class="col-md project">
+    	<div class="col-md project project-image">
         <div class="container">
-          <img src="https://www.android.com/static/2016/img/share/andy-lg.png" class="img-fluid project-image" alt="android_photo">  
+          <!-- <img src="https://www.android.com/static/2016/img/share/andy-lg.png" class="img-fluid project-image" alt="android_photo">   -->
         </div> 
     	</div>
-    	<div class="col-md project" data-toggle="modal" data-target="#myModal">
+    	<div class="col-md project project-image" data-toggle="modal" data-target="#myModal">
         <div class="container">
-          <img src="https://www.android.com/static/2016/img/share/andy-lg.png" class="img-fluid project-image" alt="android_photo">  
+          <!-- <img src="https://www.android.com/static/2016/img/share/andy-lg.png" class="img-fluid project-image" alt="android_photo">   -->
         </div> 
     	</div>
     </div>
@@ -119,20 +123,20 @@
       </div>
     </div>
     <div class="col-md-6">
-      <form>      
+      <form action="#" method="GET"> <!--fill in url for email later-->       
         <div class="form-group row justify-content-center">  
-        <div class="col-md">
-          <input type="text" class="form-control" placeholder="Your Name" style="text-align:center;"> 
+        <div class="col-md">  
+          <input type="text" class="form-control" placeholder="Your Name" style="text-align:center;" required> <!-- required is a boolean for form validation-->
         </div>    
         </div>
       <div class="form-group row justify-content-center">  
         <div class="col-md">
-          <input type="email" class="form-control" placeholder="Your Email" style="text-align:center;"> 
+          <input type="email" class="form-control" placeholder="Your Email" style="text-align:center;" required> 
         </div>
       </div>    
       <div class="form-group row justify-content-center">  
         <div class="col-md">
-          <textarea class="form-control" rows="5" placeholder="Your Message" style="text-align:center;"></textarea>
+          <textarea class="form-control" rows="5" placeholder="Your Message" style="text-align:center;" required></textarea>
         </div>    
       </div> 
       <div class="form-group row justify-content-center">  
@@ -148,7 +152,7 @@
 
 <footer class="footer">
 	<div class="container">
-		<p class="whiteText">Check out my Social Media Pages!</p>
+		<p class="whiteText">Check out my Social Media Pages!</p>  
     <div class="row justify-content-center"> <!-- so that the icons are on the right -->
       <div class="smicons">  <!-- have the icons in a div so they can be resized, colour changed, etc.. -->
         <a href="https://github.com/jerago" target="_blank"><i class="smicons fa fa-github"></i></a>
@@ -160,8 +164,13 @@
 	</div>
 </footer>
 
-  <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js'></script>
-<script src='https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0/js/bootstrap.min.js'></script>
+<!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0/js/bootstrap.min.js"></script> -->
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+<script src="js/jquery.js"></script>
+<script src="js/index.js"></script> 
 
 </body>
 
